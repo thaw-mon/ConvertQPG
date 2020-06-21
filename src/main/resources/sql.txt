@@ -1,0 +1,9 @@
+Q1 - SELECT Artifact.id,Artifact.title,Artifact.authors,Artifact.keywords FROM Venue.features.Artifact WHERE Venue.name = "VLDB" AND Venue.year >= 2015
+Q2 - SELECT Artifact.id,Artifact.title,Artifact.authors,Artifact.keywords,Venue.name FROM Artifact.features.Venue WHERE Artifact.author = "John Smith" ORDER BY Venue.year(DESC)
+Q3 - SELECT User.id,User.name,User.email,User.expertises FROM Artifact.likes.User WHERE Artifact.id = 346
+Q4 - SELECT User.id,User.name,User.email,User.expertises FROM Artifact.likes.User WHERE Artifact.id = 346 AND User.expertises = "..."
+Q5 - SELECT Review.rating FROM Artifact.rates.Review WHERE Artifact.id = 346
+Q6 - SELECT Venue.name,Venue.year,Venue.homepage,Venue.country,Venue.topics FROM User.likes.Venue WHERE User.id = 5003
+Q7 - SELECT Artifact.title,Artifact.authors FROM User.likes.Artifact.features.Venue WHERE User.id = 5003 AND Venue.year >= 2015 ORDER BY Venue.year(DESC)
+Q8 - SELECT Review.id,Review.rating,Review.body,Review.date,Review.title FROM User.posts.Review WHERE User.id = 5003 AND Review.rating >= 3 ORDER BY Review.rating(DESC)
+Q9 - SELECT Artifact.id,Artifact.title,Artifact.authors,Artifact.keywords FROM Artifact WHERE Artifact.id = 346

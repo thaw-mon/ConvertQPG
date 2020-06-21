@@ -1,0 +1,9 @@
+QueryKeysEntity{queryNum=1, EqualitySearchKeys=[Venue.name], InequalitySearchKeys=[Venue.year], OrderingKeys=[], SelectedKeys=[Artifact.id, Artifact.title, Artifact.authors, Artifact.keywords]}
+QueryKeysEntity{queryNum=2, EqualitySearchKeys=[Artifact.author], InequalitySearchKeys=[], OrderingKeys=[Venue.year(DESC)], SelectedKeys=[Artifact.id, Artifact.title, Artifact.authors, Artifact.keywords, Venue.name]}
+QueryKeysEntity{queryNum=3, EqualitySearchKeys=[Artifact.id], InequalitySearchKeys=[], OrderingKeys=[], SelectedKeys=[User.id, User.name, User.email, User.expertises]}
+QueryKeysEntity{queryNum=4, EqualitySearchKeys=[Artifact.id, User.expertises], InequalitySearchKeys=[], OrderingKeys=[], SelectedKeys=[User.id, User.name, User.email, User.expertises]}
+QueryKeysEntity{queryNum=5, EqualitySearchKeys=[Artifact.id], InequalitySearchKeys=[], OrderingKeys=[], SelectedKeys=[Review.rating]}
+QueryKeysEntity{queryNum=6, EqualitySearchKeys=[User.id], InequalitySearchKeys=[], OrderingKeys=[], SelectedKeys=[Venue.name, Venue.year, Venue.homepage, Venue.country, Venue.topics]}
+QueryKeysEntity{queryNum=7, EqualitySearchKeys=[User.id], InequalitySearchKeys=[Venue.year], OrderingKeys=[Venue.year(DESC)], SelectedKeys=[Artifact.title, Artifact.authors]}
+QueryKeysEntity{queryNum=8, EqualitySearchKeys=[User.id], InequalitySearchKeys=[Review.rating], OrderingKeys=[Review.rating(DESC)], SelectedKeys=[Review.id, Review.rating, Review.body, Review.date, Review.title]}
+QueryKeysEntity{queryNum=9, EqualitySearchKeys=[Artifact.id], InequalitySearchKeys=[], OrderingKeys=[], SelectedKeys=[Artifact.id, Artifact.title, Artifact.authors, Artifact.keywords]}

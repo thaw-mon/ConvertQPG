@@ -1,0 +1,7 @@
+Edge{QPG edge=<Venue,Venue>/features, queryNumbers=[1], cardinality=*}
+Edge{QPG edge=<Artifact,Artifact>/features, queryNumbers=[2, 7], cardinality=1}
+Edge{QPG edge=<Artifact,Artifact>/likes, queryNumbers=[3, 4], cardinality=*}
+Edge{QPG edge=<Artifact,Artifact>/rates, queryNumbers=[5], cardinality=*}
+Edge{QPG edge=<User,User>/likes, queryNumbers=[6], cardinality=*}
+Edge{QPG edge=<User,User>/likes, queryNumbers=[7], cardinality=*}
+Edge{QPG edge=<User,User>/posts, queryNumbers=[8], cardinality=*}

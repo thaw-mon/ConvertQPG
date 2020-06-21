@@ -1,0 +1,4 @@
+entity User {int id [K],string name,string[] expertises,string email,ref Artifact[*] likes,ref Venue[*] likes,ref Review[*] posts,ref Review[*] likes,}
+entity Review {int id [K],string title,string body,int rating,string date,ref User[1] posts,ref User[*] likes,ref Artifact[1] rates,}
+entity Artifact {int id [K],string title,string[] authors,string[] keywords,ref Review[*] rates,ref User[*] likes,ref Venue[1] features,}
+entity Venue {string name [K],int year [K],string[] topics,string country,string homepage,ref Artifact[*] features,ref User[*] likes,}
