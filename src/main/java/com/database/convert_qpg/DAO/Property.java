@@ -45,4 +45,8 @@ public class Property implements Serializable {
         }
         return ret.toString();
     }
+
+    public String toNodeString() {
+        return name + "/" + type;
+    }
 }

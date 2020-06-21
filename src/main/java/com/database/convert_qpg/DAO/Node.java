@@ -100,9 +100,16 @@ public class Node {
 
     @Override
     public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (Property property : scalarProperties) {
+            sb.append(property.toNodeString()).append(",");
+        }
+        sb.deleteCharAt(sb.length() - 1);
+        sb.append("]");
         return "Node{" +
                 "nodeName='" + nodeName + '\'' +
-                ", scalarProperties=" + scalarProperties +
+                ", scalarProperties=" + sb.toString() +
                 ", isAccessPoint=" + isAccessPoint +
                 ", queryNumbers=" + queryNumbers +
                 ", outNeighbors=" + outNeighbors +

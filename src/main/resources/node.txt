@@ -1,4 +1,4 @@
-Node{nodeName='User', scalarProperties=[int id [K], string name, string[] expertises, string email], isAccessPoint=true, queryNumbers=[6, 7, 8], outNeighbors=[Venue, Artifact, Review]}
-Node{nodeName='Review', scalarProperties=[int id [K], string title, string body, int rating, string date], isAccessPoint=false, queryNumbers=[], outNeighbors=[]}
-Node{nodeName='Artifact', scalarProperties=[int id [K], string title, string[] authors, string[] keywords], isAccessPoint=true, queryNumbers=[2, 3, 4, 5, 9], outNeighbors=[Venue, User, Review]}
-Node{nodeName='Venue', scalarProperties=[string name [K], int year [K], string[] topics, string country, string homepage], isAccessPoint=true, queryNumbers=[1], outNeighbors=[Artifact]}
+Node{nodeName='User', scalarProperties=[id/int,name/string,expertises/string[],email/string], isAccessPoint=true, queryNumbers=[6, 7, 8], outNeighbors=[Venue, Artifact, Review]}
+Node{nodeName='Review', scalarProperties=[id/int,title/string,body/string,rating/int,date/string], isAccessPoint=false, queryNumbers=[], outNeighbors=[]}
+Node{nodeName='Artifact', scalarProperties=[id/int,title/string,authors/string[],keywords/string[]], isAccessPoint=true, queryNumbers=[2, 3, 4, 5, 9], outNeighbors=[Venue, User, Review]}
+Node{nodeName='Venue', scalarProperties=[name/string,year/int,topics/string[],country/string,homepage/string], isAccessPoint=true, queryNumbers=[1], outNeighbors=[Artifact]}
